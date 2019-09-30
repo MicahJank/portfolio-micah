@@ -1922,6 +1922,14 @@ input, select, textarea {
 		padding: 2em;
 	}
 
+		.box.skills {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background: rgb(146, 21, 31);
+			width: 80%;
+		}
+
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
 			background: rgb(146, 21, 31)
@@ -1989,6 +1997,17 @@ input, select, textarea {
 
 			.icon.featured.fa-js {
 				color: #F0D91D;
+			}
+
+			.icon.react {
+				color: #00D5FF;
+			}
+
+			.icon.redux {
+				font-size: 6rem;
+				margin-bottom: 26px;
+				color: #764ABC;
+
 			}
 
 /* Wrappers */
@@ -2215,6 +2234,12 @@ input, select, textarea {
 					padding: 2em 0 2em 0;
 				}
 
+		/* Icons */
+			.icon.redux {
+				margin-bottom: 22px;
+				font-size: 5rem;
+			}
+
 		/* Articles */
 
 			#top {
@@ -2243,6 +2268,14 @@ input, select, textarea {
 				#top .image {
 					margin: 0 auto 2em auto;
 				}
+
+				
+		/* Icons */
+		.icon.redux {
+			margin-bottom: 22px;
+			font-size: 5rem;
+		}
+
 
 	}
 
@@ -2290,6 +2323,19 @@ input, select, textarea {
 
 			hr {
 				margin: 1.5em 0 2em 0;
+			}
+		
+		/* Icons */
+			.icon.redux {
+				margin-bottom: 15px;
+				font-size: 5rem;
+			}
+
+			.box.skills {
+				padding: 50px
+			}
+			.box.skills div {
+				margin: 10px;
 			}
 
 		/* Section/Article */
