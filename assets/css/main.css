@@ -100,7 +100,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Open Sans', sans-serif;
 		line-height: 1.85em;
-		color: #888;
+		color: #dbdbdb;
 		font-weight: 300;
 		font-size: 13pt;
 	}
@@ -124,7 +124,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #ffffff;
 	}
 
 	i, em {
@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #dbdbdb;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -211,6 +211,7 @@ input, select, textarea {
 		header > p {
 			font-size: 1.25em;
 			margin: 0;
+			text-shadow: none;
 		}
 
 	footer {
@@ -219,6 +220,7 @@ input, select, textarea {
 
 		footer > p {
 			font-size: 1.25em;
+			text-shadow: none;
 		}
 
 /* Container */
@@ -1642,6 +1644,10 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+			.image.featured img {
+				height: 230px;
+				object-fit: cover;
+			}
 
 		.image.left {
 			float: left;
@@ -1911,7 +1917,6 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
@@ -1919,6 +1924,7 @@ input, select, textarea {
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
+			background: rgb(146, 21, 31)
 		}
 
 			.box.style1 h3 {
@@ -1939,59 +1945,77 @@ input, select, textarea {
 
 /* Icons */
 
-	.icon {
-		text-decoration: none;
+	.social .icon:before {
+		font-family: FontAwesome;
 	}
 
-		.icon:before {
-			display: inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
+		.icon {
 			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 		}
 
-		.icon > .label {
-			display: none;
-		}
+			.icon:before {
+				display: inline-block;
+				font-size: 1.25em;
+				text-decoration: none;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
 
-		.icon.featured {
-			color: #EA8A95;
-			display: block;
-			margin: 0 0 1.5em 0;
-			cursor: default;
-		}
+			.icon > .label {
+				display: none;
+			}
 
-			.icon.featured:before {
-				font-size: 6em;
+			.icon.featured {
+				z-index: 1;
+				display: block;
+				margin: 0 0 1.5em 0;
+				cursor: default;
+			}
+
+				.icon.featured:before {
+					font-size: 6em;
+				}
+
+			.icon.featured.fa-html5 {
+				color: rgb(255, 142, 49);
+			}
+
+			.icon.featured.fa-css3 {
+				color: rgb(93, 131, 255);
+			}
+
+			.icon.featured.fa-js {
+				color: #F0D91D;
 			}
 
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		/* background-image: url("images/bg.png"); */
+		/* box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1); */
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background: linear-gradient(to bottom, #B21624, rgb(146, 20, 30) );
+			/* background-color: #B21624; */
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
+			background: linear-gradient(to bottom, rgb(146, 20, 30), rgb(212, 21, 37) );
+			/* background-color: #B21624; */
+			text-shadow: 1px 1px 0px rgb(36, 36, 36);
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			background: linear-gradient(to bottom, rgb(212, 21, 37), rgb(146, 20, 30) );
+			/* background-color: #B21624; */
+			text-shadow: 1px 1px 0px rgb(36, 36, 36);
 		}
 
 		.wrapper.style4 {
@@ -2331,6 +2355,8 @@ input, select, textarea {
 
 		/* Box */
 
+		article
+
 			.box {
 				padding: 30px 20px 30px 20px;
 				margin: 0 0 20px 0 !important;
@@ -2349,7 +2375,7 @@ input, select, textarea {
 					left: 20px;
 					top: 20px;
 					margin: -50px 0 50px -40px;
-					width: auto;
+					object-fit: cover;
 				}
 
 				.box.style1 {
@@ -2363,6 +2389,8 @@ input, select, textarea {
 					margin-left: auto !important;
 					margin-right: auto !important;
 				}
+
+				
 
 		/* Wrappers */
 
