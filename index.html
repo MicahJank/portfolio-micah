@@ -14,6 +14,8 @@
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
 		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<script defer src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -39,7 +41,7 @@
 					<header>
 						<h1>Hi. I'm <strong>Micah Jank</strong>.</h1>
 					</header>
-					<p>And this is my <strong> Portfolio Website</strong>.</p>
+					<h2>a <strong> Web Developer</strong>.</h2>
 					<a href="#work" class="button large scrolly">Learn about what I do</a>
 				</div>
 			</div>
@@ -54,39 +56,40 @@
 				<p>Odio turpis amet sed consequat eget posuere consequat.</p>
 			</header>
 			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<i class="icon featured fab fa-html5"></i>
-						<h3>HTML</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<i class="icon featured fab fa-css3"></i>
-						<h3>CSS</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
+				<section class="box skills">
+					<div>
+						<i class="icon featured fab fa-react react"></i>
+						<h3>React</h3>
+					</div>
+					<div>
+						<span class="iconify icon redux" data-icon="simple-icons:redux" data-inline="false"></span>
+						<h3>Redux</h3>
+					</div>
+					<div>
 						<i class="icon featured fab fa-js"></i>
 						<h3>Javascript</h3>
-						<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem
-							dolore.</p>
-					</section>
-				</div>
+					</div>
+
+					<div>
+						<i class="icon featured fab fa-css3"></i>
+						<h3>CSS</h3>
+					</div>
+
+					<div>
+						<i class="icon featured fab fa-html5"></i>
+						<h3>HTML</h3>
+					</div>
+				</section>
 			</div>
-			<footer>
-				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-				<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-			</footer>
+		</div>
+		<footer>
+			<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+			<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+		</footer>
 		</div>
 	</article>
 
-	<!-- Portfolio -->
+	<!-- Portfolio --> 
 	<article id="portfolio" class="wrapper style3">
 		<div class="container">
 			<header>
@@ -96,15 +99,41 @@
 			<div class="row">
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/nasaphoto.png" alt="" /></a>
+						<h3><a href="https://stupefied-brown-159e68.netlify.com"
+								target="_blank">Nasa Photo of the Day</a></h3>
+						<p>NASA photo of the Day uses the NASA api to display their photo of the day, along with previous photos.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/Lambda ToDo.png" alt="" /></a>
+						<h3><a href="https://naughty-hoover-530b83.netlify.com/" target="_blank">Lambda ToDo</a></h3>
+						<p>A simple ToDo App that keeps track of your to-do's.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
+						<a href="#" class="image featured"><img src="images/career-longevity.png" alt="" /></a>
+						<h3><a href="https://careerlongevity.netlify.com/index.html#" target="_blank">Career Longevity
+								Marketing Page</a></h3>
+						<p>Fully responsive marketing page for a fake app that predicts professional basketball players
+							career longevity.</p>
+					</article>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<article class="box style2">
 						<a href="#" class="image featured"><img src="images/BarkrSnapShot.png" alt="" /></a>
-						<h3><a href="https://micahjank.github.io/barkr/" target="_blank">Barkr App Landing Page</a></h3>
+						<h3><a href="https://micahjank.github.io/barkr/" target="_blank">Barkr App Landing Page</a>
+						</h3>
 						<p>Landing page for a fake app called Barkr, it was made using HTML, CSS and Bootstrap.</p>
 					</article>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<a href="" class="image featured"><img src="images/Log In Portal.png" alt="" /></a>
-						<h3><a href="https://micahjank.github.io/login-portal/" target="_blank">Log-in Portal Page</a>
+						<h3><a href="https://micahjank.github.io/login-portal/" target="_blank">Log-in Portal
+								Page</a>
 						</h3>
 						<p>This is a log-in portal made using Bootstrap. No functionality yet. Purely cosmetic.</p>
 					</article>
@@ -112,8 +141,10 @@
 				<div class="col-4 col-6-medium col-12-small">
 					<article class="box style2">
 						<a href="#" class="image featured"><img src="images/Vitrual-Drum-Kit.png" alt="" /></a>
-						<h3><a href="https://micahjank.github.io/drum-kit/" target="_blank">Virtual Drum Kit</a></h3>
-						<p>This is a virtual drum kit that uses HTML, CSS and Javascript to play sound when a button is
+						<h3><a href="https://micahjank.github.io/drum-kit/" target="_blank">Virtual Drum Kit</a>
+						</h3>
+						<p>This is a virtual drum kit that uses HTML, CSS and Javascript to play sound when a button
+							is
 							pressed.</p>
 					</article>
 				</div>
@@ -122,24 +153,9 @@
 						<a href="#" class="image featured"><img src="images/Great-Idea-Website.png" alt="" /></a>
 						<h3><a href="https://github.com/MicahJank/responsive-web-design-I/tree/micah-jank"
 								target="_blank">Great Idea Website</a></h3>
-						<p>This is a website I made by following a design file, the goal was to learn responsiveness.
+						<p>This is a website I made by following a design file, the goal was to learn
+							responsiveness.
 						</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/Sprint-Challenge.png" alt="" /></a>
-						<h3><a href="https://github.com/MicahJank/Sprint-Challenge--User-Interface"
-								target="_blank">Sprint Challenge</a></h3>
-						<p>This is a project where I had to use the HTML and CSS skills i learned to make a website
-							based on design files.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" class="image featured"><img src="images/Dice-Game.png" alt="" /></a>
-						<h3><a href="https://micahjank.github.io/dice-game/" target="_blank">The Dice Game</a></h3>
-						<p>A simple dice game where to players can compete and see who has the higher number.</p>
 					</article>
 				</div>
 			</div>
@@ -147,7 +163,6 @@
 				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
 				<a href="#contact" class="button large scrolly">Get in touch with me</a>
 			</footer>
-		</div>
 	</article>
 
 	<!-- Contact -->
