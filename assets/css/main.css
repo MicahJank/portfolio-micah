@@ -1920,6 +1920,7 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+		cursor: pointer;
 	}
 
 		.box.skills {
@@ -2128,6 +2129,10 @@ input, select, textarea {
 				}
 
 /* Articles */
+
+	.project-card {
+		cursor: pointer;
+	}
 
 	body > article {
 		margin-bottom: 0;
@@ -2435,6 +2440,7 @@ input, select, textarea {
 					margin-left: auto !important;
 					margin-right: auto !important;
 				}
+
 
 				
 
