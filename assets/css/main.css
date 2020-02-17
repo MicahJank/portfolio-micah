@@ -2025,7 +2025,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background: linear-gradient(to bottom, #B21624, rgb(146, 20, 30) );
+			background: linear-gradient(to bottom, rgb(146, 20, 30), rgb(212, 21, 37) );
 			/* background-color: #B21624; */
 		}
 
