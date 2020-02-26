@@ -1950,6 +1950,10 @@ input, select, textarea {
 			margin: -4em 0 4em -4em;
 			width: auto;
 		}
+		
+		.project {
+			cursor: pointer;
+		}
 
 /* Icons */
 
@@ -2021,7 +2025,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background: linear-gradient(to bottom, #B21624, rgb(146, 20, 30) );
+			background: linear-gradient(to bottom, rgb(146, 20, 30), rgb(212, 21, 37) );
 			/* background-color: #B21624; */
 		}
 
@@ -2128,6 +2132,10 @@ input, select, textarea {
 				}
 
 /* Articles */
+
+	.project-card {
+		cursor: pointer;
+	}
 
 	body > article {
 		margin-bottom: 0;
@@ -2435,6 +2443,7 @@ input, select, textarea {
 					margin-left: auto !important;
 					margin-right: auto !important;
 				}
+
 
 				
 
